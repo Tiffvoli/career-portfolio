@@ -1,0 +1,653 @@
+/*---------------------responsive--------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*--------------- For mobile phones --------------- */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cover {
+    text-align: center;
+    margin-top: 1vw;
+  }
+  .cover img {
+    width: 1em;
+  }
+  .project10 {
+    text-align: center;
+  }
+  .project1,
+  .project10,
+  .project8,
+  .project9 {
+    margin-top: 1vw;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background-color: white;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+  line-height: 0;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 0;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
+  letter-spacing: 0.2em;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20vw;
+  line-height: 0;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0;
+  letter-spacing: 0.2em;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  cursor: pointer;
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.block {
+  background-color: #fdb3bb;
+  position: relative;
+  height: 5em;
+  width: 100%;
+  top: 6.5vw;
+  animation: appear 2s linear forwards;
+}
+.block2 {
+  background-color: #9ad7da;
+  position: relative;
+  height: 5em;
+  width: 50%;
+  top: 6.5vw;
+  animation: appear 2s linear forwards;
+}
+@keyframes appear {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.header {
+  background-color: white;
+  height: 9vw;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4.5vw;
+}
+.sidepage-header {
+  background-color: white;
+  height: 9vw;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+/*--------------------Menu Bar---------------------- */
+.sidepage-topnav {
+  font-size: 1vw;
+  padding-top: 3vw;
+}
+.sidepage-topnav a {
+  color: black;
+  text-decoration: none;
+  padding: 2vw;
+}
+.topnav {
+  font-size: 1.5vw;
+}
+.topnav a {
+  color: black;
+  text-decoration: none;
+  padding: 2vw;
+}
+
+.topnav a:hover {
+  color: #fdb3bb;
+}
+
+/*-------------------- Portfolio---------------------- */
+.cover {
+  background-color: #fdb3bb;
+  height: 45vw;
+  width: 100%;
+  overflow: hidden;
+}
+.cover img {
+  width: 45vw;
+}
+.underline {
+  background-color: #9ad7da;
+  height: 1.4vw;
+  margin-top: 2em;
+}
+.introduction {
+  margin-bottom: -2vw;
+}
+
+/*-------------------- Gallery --------------------- */
+.gallery {
+  background-color: white;
+  height: 1540px;
+  width: 100%;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.column {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 25px;
+}
+
+.column img {
+  margin-bottom: 35px;
+  vertical-align: middle;
+  width: 100%;
+  opacity: 1;
+}
+.img_wrap {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.img_description {
+  position: absolute;
+  margin-top: 1em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*-------------------- Contact --------------------- */
+.contact {
+  background-color: #ffe6e1;
+  height: 350px;
+}
+
+/*-------------------- Content --------------------- */
+.project1 {
+  background-color: #ffe6e1;
+}
+
+.content {
+  background-color: white;
+  height: 1200px;
+}
+.title-img {
+  width: 100%;
+}
+.col-12 img {
+  padding: 10px;
+}
+/*-------------------- Timeline --------------------- */
+.timeline {
+  overflow: hidden;
+}
+.timeline img {
+  width: 85%;
+  padding: 0;
+}
+.timeline h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.timeline li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffe6e1;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 450px;
+  padding: 10px;
+  background: white;
+}
+
+.timeline ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -480px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline ul li::after {
+  background: #fff;
+  transition: background 0.8s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #e79b9b;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------making it responsive -------------------*/
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
+}
+
+/*--------------coloured headers-------------------*/
+.project1,
+.project10,
+.project8,
+.project9 {
+  height: 45vw;
+  width: 100%;
+  overflow: hidden;
+}
+.project9 {
+  background-color: #ededed;
+}
+.project8 {
+  background-color: #f8c6cf;
+}
+.project10 {
+  background-color: #9ad7da;
+}
+.skills {
+  padding-bottom: 50px;
+}
+/*------------------skill bar-------------------------*/
+
+.chart-skills {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chart-skills *,
+.chart-skills::before {
+  box-sizing: border-box;
+}
+
+.chart-skills {
+  position: relative;
+  width: 350px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.chart-skills::before,
+.chart-skills::after {
+  position: absolute;
+}
+
+.chart-skills::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: 45px solid rgba(211, 211, 211, 0.3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills::after {
+  content: "Top Skills";
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #9ad7da;
+}
+
+.chart-skills li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 45px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+}
+
+.chart-skills li:nth-child(1) {
+  z-index: 4;
+  border-color: #e79b9b;
+  animation-name: rotate-one;
+  animation-delay: 4s;
+}
+
+.chart-skills li:nth-child(2) {
+  z-index: 3;
+  border-color: #f8c6cf;
+  animation-name: rotate-two;
+  animation-delay: 4.4s;
+}
+
+.chart-skills li:nth-child(3) {
+  z-index: 2;
+  border-color: #ffe6e1;
+  animation-name: rotate-three;
+  animation-delay: 4.8s;
+}
+
+.chart-skills li:nth-child(4) {
+  z-index: 1;
+  border-color: #9ad7da;
+  animation-name: rotate-four;
+  animation-delay: 5.2s;
+}
+
+.chart-skills span {
+  position: absolute;
+  font-size: 0.85rem;
+  backface-visibility: hidden;
+  animation: fade-in 4s linear forwards;
+}
+
+.chart-skills li:nth-child(1) span {
+  top: 5px;
+  left: 10px;
+  transform: rotate(-21.6deg);
+}
+
+.chart-skills li:nth-child(2) span {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-79.2deg);
+  animation-delay: 0.5s;
+}
+
+.chart-skills li:nth-child(3) span {
+  top: 18px;
+  left: 10px;
+  transform: rotate(-140.4deg);
+  animation-delay: 1s;
+}
+
+.chart-skills li:nth-child(4) span {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-180deg);
+  animation-delay: 1.5s;
+}
+
+/*-------------Animation----------------*/
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(21.6deg);
+    /**
+     * 12% => 21.6deg
+     */
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(21.6deg);
+  }
+  100% {
+    transform: rotate(79.2deg);
+    /**
+     * 32% => 57.6deg
+     * 57.6 + 21.6 => 79.2deg
+     */
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotate(79.2deg);
+  }
+  100% {
+    transform: rotate(140.4deg);
+    /**
+     * 34% => 61.2deg
+     * 61.2 + 79.2 => 140.4deg
+     */
+  }
+}
+
+@keyframes rotate-four {
+  0% {
+    transform: rotate(140.4deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    /**
+     * 22% => 39.6deg
+     * 140.4 + 39.6 => 180deg
+     */
+  }
+}
+
+@keyframes fade-in {
+  0%,
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
